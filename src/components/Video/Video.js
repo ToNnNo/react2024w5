@@ -13,7 +13,7 @@ export default function Video({ data }) {
                 <p className="">{data.description}</p> 
             </div>
             <div className="col-2 text-end">
-                <LikeButton state={data.like} />
+                <LikeButton like={data.like} />
             </div>
         </div>
     );

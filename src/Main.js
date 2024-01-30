@@ -7,6 +7,8 @@ import Event from "./pages/Event";
 import Fragment from "./pages/Fragment";
 import StyleAsset from "./pages/StyleAsset/StyleAsset";
 import ExerciceVideo from "./pages/ExerciceVideo";
+import LocalState from "./pages/LocalState";
+import Composition from "./pages/Composition";
 
 export default function Main() {
     return (
@@ -19,6 +21,8 @@ export default function Main() {
             <Route path="fragment" element={<Fragment />} />
             <Route path="style-asset" element={<StyleAsset />} />
             <Route path="exercice-video" element={<ExerciceVideo />} />
+            <Route path="local-state" element={<LocalState />} />
+            <Route path="composition" element={<Composition />} />
         </Routes>
     )
 }

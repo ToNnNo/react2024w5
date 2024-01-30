@@ -13,6 +13,8 @@ export default function Nav() {
             <Link to="/fragment" className="nav-link">Les Fragments</Link>
             <Link to="/style-asset" className="nav-link">Styles et assets</Link>
             <Link to="/exercice-video" className="nav-link">Exercice Vidéo</Link>
+            <Link to="/local-state" className="nav-link">Etat Local</Link>
+            <Link to="/composition" className="nav-link">Composition</Link>
         </nav>
     );
 }
