@@ -9,6 +9,11 @@ import StyleAsset from "./pages/StyleAsset/StyleAsset";
 import ExerciceVideo from "./pages/ExerciceVideo";
 import LocalState from "./pages/LocalState";
 import Composition from "./pages/Composition";
+import LifeCycle from "./pages/LifeCycle";
+import ExerciceHooks from "./pages/ExerciceHooks";
+import Formulaire from "./pages/Formulaire";
+import Reducer from "./pages/Reducer";
+import ExerciceTodoList from "./pages/ExerciceTodoList";
 
 export default function Main() {
     return (
@@ -23,6 +28,11 @@ export default function Main() {
             <Route path="exercice-video" element={<ExerciceVideo />} />
             <Route path="local-state" element={<LocalState />} />
             <Route path="composition" element={<Composition />} />
+            <Route path="life-cycle" element={<LifeCycle />} />
+            <Route path="exercice-hooks" element={<ExerciceHooks />} />
+            <Route path="formulaire" element={<Formulaire />} />
+            <Route path="reducer" element={<Reducer />} />
+            <Route path="exercice-todolist" element={<ExerciceTodoList />} />
         </Routes>
     )
 }

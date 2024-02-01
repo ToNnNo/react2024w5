@@ -15,6 +15,11 @@ export default function Nav() {
             <Link to="/exercice-video" className="nav-link">Exercice Vidéo</Link>
             <Link to="/local-state" className="nav-link">Etat Local</Link>
             <Link to="/composition" className="nav-link">Composition</Link>
+            <Link to="/life-cycle" className="nav-link">Cycle de vie (useEffet)</Link>
+            <Link to="/exercice-hooks" className="nav-link">Exercice Hooks</Link>
+            <Link to="/formulaire" className="nav-link">Formulaire</Link>
+            <Link to="/reducer" className="nav-link">Hook Reducer</Link>
+            <Link to="/exercice-todolist" className="nav-link">Exercie TodoList</Link>
         </nav>
     );
 }
