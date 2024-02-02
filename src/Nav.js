@@ -30,6 +30,7 @@ export default function Nav() {
             <Link to="/memo" className="nav-link">Hook Memo</Link>
             <Link to="/callback" className="nav-link">Hook Callback</Link>
             <Link to="/users" className="nav-link">Liste des utilisateurs</Link>
+            <Link to="/redux" className="nav-link">Redux</Link>
         </nav>
     );
 }
