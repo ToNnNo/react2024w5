@@ -22,6 +22,7 @@ import HookMemo from "./pages/HookMemo";
 import HookCallback from "./pages/HookCallback";
 import Users from "./pages/Users";
 import Redux from "./pages/Redux";
+import Products from "./pages/Products";
 
 export default function Main() {
     return (
@@ -57,6 +58,7 @@ export default function Main() {
             <Route path="callback" element={<HookCallback />} />
             <Route path="users" element={<Users />} />
             <Route path="redux" element={<Redux />} />
+            <Route path="products" element={<Products />} />
 
             <Route path="*" element={<NotFound />} />
         </Routes>
