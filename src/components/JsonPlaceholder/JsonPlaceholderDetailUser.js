@@ -1,5 +1,6 @@
+import { memo } from "react";
 
-export default function JsonPlaceholderDetailUser({ user = {} }) {
+function JsonPlaceholderDetailUser({ user = {} }) {
 
     console.log("JsonPlaceholderDetailUser")
 
@@ -77,3 +78,7 @@ export default function JsonPlaceholderDetailUser({ user = {} }) {
         </>
     );
 }
+
+// évite le rechargement du composant si la props ne change pas
+// https://fr.react.dev/reference/react/memo
+export default memo(JsonPlaceholderDetailUser);

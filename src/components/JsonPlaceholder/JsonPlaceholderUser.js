@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import JsonPlaceholderDetailUser from "./JsonPlaceholderDetailUser";
+import { Link } from "react-router-dom";
 
 export default function JsonPlaceholderUser() {
 
@@ -30,8 +31,12 @@ export default function JsonPlaceholderUser() {
                     <div className="list-group">
                         { users.map( user => (
                             <button key={user.id} onClick={ () => { setUser(user) } }
-                                type="button" className="list-group-item list-group-item-action">
+                                type="button" className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                                 {user.name}
+
+                                <Link className="btn" to={"/exercice/user/"+user.id}>
+                                    <i className="bi bi-box-arrow-up-right"></i>
+                                </Link>
                             </button>
                         ))}
                     </div>
